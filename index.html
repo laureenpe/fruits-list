@@ -29,15 +29,17 @@
 
 
 
-    <br><select name=" Frutas">
-    <option value="0"> Escoje fruta</option>  
-    <option value="1">1. Manzana</option>
-    <option value="2">2. Pera</option>
-    <option value="3">3. Piña</option>
-    <option value="4">4. Cereza</option>
-    <option value="5">5. Naranja</option>
-    </select>
-
+    <form action="/action_page.php" method="get">
+        <input list="frutas" name="fruta">
+        <datalist id="frutas">
+    <option value="Manzana">
+    <option value="Pera">
+    <option value="Piña">
+    <option value="Cereza">
+    <option value="Naranja">
+  </datalist>
+        <input type="submit">
+    </form>
 
 </body>
 
